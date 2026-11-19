@@ -1,0 +1,16 @@
+{
+  "name": "sis-login",
+  "version": "1.0.0",
+  "description": "MUST Student Information System: login with client-side and server-side validation",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2"
+  }
+}

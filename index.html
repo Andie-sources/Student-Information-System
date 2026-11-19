@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Information System | Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>Student Information System</h1>
+      <p class="subtitle">Mbarara University of Science and Technology</p>
+    </header>
+
+    <!-- novalidate: we do the checking ourselves with JavaScript -->
+    <form id="loginForm" novalidate>
+
+      <div class="field">
+        <label for="regNo">Student Registration Number</label>
+        <input type="text" id="regNo" name="registrationNumber"
+               placeholder="e.g. 2024/BSE/001" autocomplete="username">
+        <span class="error" id="regNoError" role="alert"></span>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <div class="password-wrap">
+          <input type="password" id="password" name="password"
+                 placeholder="At least 8 characters" autocomplete="current-password">
+          <button type="button" id="togglePassword" class="toggle">Show</button>
+        </div>
+        <span class="error" id="passwordError" role="alert"></span>
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+
+      <p id="successMsg" class="success" role="status"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
